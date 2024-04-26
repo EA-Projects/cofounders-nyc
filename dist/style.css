@@ -9349,7 +9349,7 @@ hr {
     border-radius: 3px;
   }
   #hero .area-image .people-group .people-profile.is-first {
-    top: 270px;
+    top: 230px;
     left: -15px;
   }
   #hero .area-image .people-group .people-profile.is-first img {
@@ -9387,7 +9387,13 @@ hr {
   #hero .content-hero {
     max-width: 400px;
   }
+  #hero .content-hero img {
+    max-width: 150px;
+  }
   #hero .content-hero h1 {
+    max-width: 300px;
+  }
+  #hero .content-hero p:not(.is-small) {
     max-width: 300px;
   }
   #hero .content-hero .buttons {
@@ -9424,12 +9430,17 @@ footer .footer-content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 15px;
+  gap: 8px;
 }
 footer .footer-content span {
   font-size: 13px;
   font-weight: 200;
   color: #FFFFFF;
+  position: relative;
+  top: 1px;
+}
+footer .footer-content a {
+  line-height: 0;
 }
 
 #top-page {
@@ -9711,6 +9722,10 @@ footer .footer-content span {
   #main-form .form-area form textarea {
     margin-top: 5px;
     padding: 6px 10px;
+    border-radius: 0;
+  }
+  #main-form .form-area form input.button {
+    border-radius: 0;
   }
   #main-form .form-area form .hidden-group {
     padding: 1px 12px;

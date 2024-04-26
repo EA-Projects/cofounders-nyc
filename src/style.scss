@@ -429,7 +429,7 @@ hr{
             border-radius: 3px;
           }
           &.is-first{
-            top: 270px;
+            top: 230px;
             left: -15px;
             img{
               max-width: 45px;
@@ -469,7 +469,13 @@ hr{
     padding-top: 70px;
     .content-hero{
       max-width: 400px;
+      img{
+        max-width: 150px;
+      }
       h1{
+        max-width: 300px;
+      }
+      p:not(.is-small){
         max-width: 300px;
       }
       .buttons{
@@ -500,11 +506,16 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 8px;
     span{
       font-size: 13px;
       font-weight: 200;
       color: $white;
+      position: relative;
+      top: 1px;
+    }
+    a{
+      line-height: 0; 
     }
   }
 }
@@ -766,6 +777,10 @@ footer{
         textarea{
           margin-top: 5px;
           padding: 6px 10px;
+          border-radius: 0;
+        }
+        input.button{
+          border-radius: 0;
         }
         .hidden-group{
           padding: 1px 12px;
