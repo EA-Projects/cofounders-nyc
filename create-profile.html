@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" />
+
+    <title>Browse. Connect. Build. — cofounders.nyc</title>
+    <meta name="description" content="">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="" />
+    <meta
+      property="og:description"
+      content=""
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="" />
+    <meta
+      property="twitter:title"
+      content=""
+    />
+    <meta
+      property="twitter:description"
+      content=""
+    />
+    <meta property="twitter:image" content="" />
+
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+
+  <body class="is-white">
+    <div id="wrapper-site">
+      <section id="top-page">
+        <div class="content-top-page">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <a href="index.html">
+                  <img src="images/cofounders-nyc.svg" alt="cofunders.nyc">
+                </a>
+              </div>
+            </div>
+          </div>
+          <img class="top-image" src="images/top-page-image.jpg" alt="">
+        </div>
+      </section>
+
+      <section id="main-form">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+              <div class="form-area">
+                <div class="top-form-area">
+                  <h1>Create a profile</h1>
+                  <p class="is-small">Fields marked with * are required.</p>
+                </div>
+
+                <form id="register-form" action="">
+                  <h2>About You</h2>
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="first-lastname">First and Last Name*
+                        <input type="text" name="first-lastname" id="first-lastname" required>
+                      </label>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="current-city">Current City*
+                        <input type="text" name="current-city" id="current-city" required>
+                      </label>
+                    </div>
+                    <div class="field">
+                      <label for="state">State*
+                        <input type="text" name="state" id="state" required>
+                      </label>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="personal-email">Personal Email*
+                        <input type="email" name="personal-email" id="personal-email" required>
+                      </label>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="linkedin">Linkedin url*
+                        <input type="text" name="linkedin" id="linkedin" required>
+                      </label>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="school">School*
+                        <input type="text" name="school" id="school" required>
+                      </label>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="personal-website">Personal Website
+                        <input type="text" name="personal-website" id="personal-website">
+                      </label>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="bio">BIO* <span>(LIMIT TO 500 CHARACTERS)</span>
+                        <textarea name="bio" id="bio" maxlength="500" required></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="ideal-partner">Ideal partner*
+                        <input type="text" name="ideal-partner" id="ideal-partner" required>
+                      </label>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="github-link">GITHUB LINK
+                        <input type="text" name="github-link" id="github-link">
+                      </label>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field">
+                    <div class="field">
+                      <label>Your co-founder journey:*</label>
+                        <div class="radio-group">
+                          <label for="actively-looking">
+                            <input type="radio" id="actively-looking" name="cofounder-journey" value="Actively looking" required>
+                            Actively looking
+                          </label>
+                          <label for="passively-looking">
+                            <input type="radio" id="passively-looking" name="cofounder-journey" value="Passively looking">
+                            Passively looking
+                          </label>
+                          <label for="just-exploring">
+                            <input type="radio" id="just-exploring" name="cofounder-journey" value="Just exploring">
+                            Just exploring
+                          </label>
+                        </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="top-form">
+                    <h4>Job History</h4>
+                    <span class="divider"></span>
+                  </div>
+                  <div class="group-field">
+                    <div class="field">
+                      <label>Are you currently working full-time?*</label>
+                      <div class="radio-group">
+                        <label for="yes-currently-working">
+                          <input type="radio" id="yes-currently-working" name="currently-working" value="Yes" required>
+                          Yes
+                        </label>
+                        <label for="no-currently-working">
+                          <input type="radio" id="no-currently-working" name="currently-working" value="No">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden-group" id="currently-working">
+                    <div class="group-field">
+                      <div class="field">
+                        <label for="current-job-title">Current Job Title*
+                          <input type="text" name="current-job-title" id="current-job-title">
+                        </label>
+                      </div>
+                      <div class="field">
+                        <label for="current-company">Current Company*
+                          <input type="text" name="current-company" id="current-company">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="group-field">
+                      <div class="field">
+                        <label for="relevant-companies">List any past, relevant companies
+                          <input type="text" name="relevant-companies" id="relevant-companies">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="group-field">
+                      <div class="field">
+                        <label>Do you have any experience founding or working at a previous startup?*</label>
+                        <div class="radio-group">
+                          <label for="yes-experience-working">
+                            <input type="radio" id="yes-experience-working" name="experience-working" value="Yes">
+                            Yes
+                          </label>
+                          <label for="no-experience-working">
+                            <input type="radio" id="no-experience-working" name="experience-working" value="No">
+                            No
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="top-form">
+                    <h4>Technical</h4>
+                    <span class="divider"></span>
+                  </div>
+                  <div class="group-field">
+                    <div class="field">
+                      <label>Are you technical?*</label>
+                      <div class="radio-group">
+                        <label for="yes-technical">
+                          <input type="radio" id="yes-technical" name="are-you-technical" value="Yes" required>
+                          Yes
+                        </label>
+                        <label for="no-technical">
+                          <input type="radio" id="no-technical" name="are-you-technical" value="No">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="top-form">
+                    <h4>Skills</h4>
+                    <span class="divider"></span>
+                  </div>
+                  <div class="group-field">
+                    <div class="field">
+                      <label>Skills (select all that apply)*</label>
+                      <div class="radio-group skill-group checkbox-group">
+                        <label for="product">
+                          <input type="checkbox" name="skills" value="Product" id="product" required>
+                          Product
+                        </label>
+
+                        <label for="engineering">
+                          <input type="checkbox" name="skills" value="Engineering" id="engineering">
+                          Engineering
+                        </label>
+
+                        <label for="sales-and-marketing">
+                          <input type="checkbox" name="skills" value="Sales and Marketing" id="sales-and-marketing">
+                          Sales and Marketing
+                        </label>
+
+                        <label for="operations">
+                          <input type="checkbox" name="skills" value="Operations" id="operations">
+                          Operations
+                        </label>
+
+                        <label for="other-skill" class="is-center">
+                          <input type="checkbox" name="skills" value="Other" id="other-skill">
+                          Other
+                          <textarea name="other-skills" id="other-skills" disabled></textarea>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field hidden-results">
+                    <div class="field">
+                      <textarea name="skill-results" id="skill-results"></textarea>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="top-form">
+                    <h4>Other</h4>
+                    <span class="divider"></span>
+                  </div>
+                  <!--  -->
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="specific-skills">List your specific skills / areas of expertise / certificates / program proficiencies / etc.
+                        <textarea name="specific-skills" id="specific-skills" maxlength="500"></textarea>
+                      </label>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="specific-skills">What sectors are you interested in building in?*</label>
+                      <div class="radio-group checkbox-group sector-group">
+                        <label for="agriculture">
+                          <input type="checkbox" name="sectors" value="Agriculture / Agtech" id="agriculture" required>
+                          Agriculture / Agtech
+                        </label>
+
+                        <label for="ai-ml">
+                          <input type="checkbox" name="sectors" value="Artificial Intelligence / Machine Learning" id="ai-ml">
+                          Artificial Intelligence / Machine Learning
+                        </label>
+
+                        <label for="b2b">
+                          <input type="checkbox" name="sectors" value="B2B / Enterprise Software" id="b2b">
+                          B2B / Enterprise Software
+                        </label>
+
+                        <label for="biotech">
+                          <input type="checkbox" name="sectors" value="Biotech" id="biotech">
+                          Biotech
+                        </label>
+
+                        <label for="climate-sustainability">
+                          <input type="checkbox" name="sectors" value="Climate / Sustainability" id="climate-sustainability">
+                          Climate / Sustainability
+                        </label>
+
+                        <label for="crypto">
+                          <input type="checkbox" name="sectors" value="Crypto" id="crypto">
+                          Crypto
+                        </label>
+
+                        <label for="consumer">
+                          <input type="checkbox" name="sectors" value="Consumer" id="consumer">
+                          Consumer
+                        </label>
+
+                        <label for="e-commerce">
+                          <input type="checkbox" name="sectors" value="E-commerce" id="e-commerce">
+                          E-commerce
+                        </label>
+
+                        <label for="data">
+                          <input type="checkbox" name="sectors" value="Data" id="data">
+                          Data
+                        </label>
+
+                        <label for="developer-tools">
+                          <input type="checkbox" name="sectors" value="Developer Tools" id="developer-tools">
+                          Developer Tools
+                        </label>
+
+                        <label for="edtech">
+                          <input type="checkbox" name="sectors" value="EdTech" id="edtech">
+                          EdTech
+                        </label>
+
+                        <label for="energy">
+                          <input type="checkbox" name="sectors" value="Energy" id="energy">
+                          Energy
+                        </label>
+
+                        <label for="fintech">
+                          <input type="checkbox" name="sectors" value="Fintech" id="fintech">
+                          Fintech
+                        </label>
+
+                        <label for="food">
+                          <input type="checkbox" name="sectors" value="Food" id="food">
+                          Food
+                        </label>
+
+                        <label for="gaming">
+                          <input type="checkbox" name="sectors" value="Gaming" id="gaming">
+                          Gaming
+                        </label>
+
+                        <label for="government">
+                          <input type="checkbox" name="sectors" value="Government" id="government">
+                          Government
+                        </label>
+
+                        <label for="hardware">
+                          <input type="checkbox" name="sectors" value="Hardware" id="hardware">
+                          Hardware
+                        </label>
+
+                        <label for="healthcare">
+                          <input type="checkbox" name="sectors" value="Healthcare" id="healthcare">
+                          Healthcare
+                        </label>
+
+                        <label for="infrastructure-software">
+                          <input type="checkbox" name="sectors" value="Infrastructure Software" id="infrastructure-software">
+                          Infrastructure Software
+                        </label>
+
+                        <label for="marketplaces">
+                          <input type="checkbox" name="sectors" value="Marketplaces" id="marketplaces">
+                          Marketplaces
+                        </label>
+
+                        <label for="open-source">
+                          <input type="checkbox" name="sectors" value="Open Source" id="open-source">
+                          Open Source
+                        </label>
+
+                        <label for="proptech">
+                          <input type="checkbox" name="sectors" value="Proptech" id="proptech">
+                          Proptech
+                        </label>
+
+                        <label for="robotics">
+                          <input type="checkbox" name="sectors" value="Robotics" id="robotics">
+                          Robotics
+                        </label>
+
+                        <label for="security">
+                          <input type="checkbox" name="sectors" value="Security" id="security">
+                          Security
+                        </label>
+
+                        <label for="other-sector">
+                          <input type="checkbox" name="sectors" value="Other" id="other-sector">
+                          Other
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field hidden-results">
+                    <div class="field">
+                      <textarea name="sector-results" id="sector-results"></textarea>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="sector-description">Anything you want to elaborate on about the above? Including more on your past job history, experience, areas of interest, passions, etc.</label>
+                      <textarea name="sector-description" id="sector-description"></textarea>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <h2>Co-Founder Matching </h2>
+
+                  <div class="group-field m-0">
+                    <div class="field">
+                      <label>Do you already have a startup or idea that you're set on?*</label>
+                      <div class="radio-group">
+                        <label for="yes-have-an-idea">
+                          <input type="radio" name="startup-idea" id="yes-have-an-idea" value="Yes, I already have an idea I’m set on and am looking for a co-founder who can help me build it" required>
+                          Yes, I already have an idea I’m set on and am looking for a co-founder who can help me build it
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="hidden-group" id="startup-idea-description">
+                    <div class="group-field">
+                      <div class="field">
+                        <label for="name-of-project">What’s the name of the project / company?*
+                          <input type="text" name="name-of-project" id="name-of-project">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="group-field">
+                      <div class="field">
+                        <label for="describe-company">Describe the company in a few sentences*
+                          <textarea name="describe-company" id="describe-company"></textarea>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="group-field">
+                      <div class="field">
+                        <label for="relevant-links">Relevant links
+                          <textarea name="relevant-links" id="relevant-links"></textarea>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="group-field mt-0 mb-5">
+                    <div class="field">
+                      <div class="radio-group">
+                        <label for="yes-but-not-ready">
+                          <input type="radio" name="startup-idea" id="yes-but-not-ready" value="Yes, but I’m not ready to share it publicly">
+                          Yes, but I’m not ready to share it publicly
+                        </label>
+                      </div>
+                      <div class="radio-group">
+                        <label for="some-ideas">
+                          <input type="radio" name="startup-idea" id="some-ideas" value="I have some ideas, but I'm also open to exploring other ideas">
+                          I have some ideas, but I'm also open to exploring other ideas
+                        </label>
+                      </div>
+                      <div class="radio-group">
+                        <label for="no-ideas">
+                          <input type="radio" name="startup-idea" id="no-ideas" value="No, I could help a co-founder with their existing idea or explore new ideas together">
+                          No, I could help a co-founder with their existing idea or explore new ideas together
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="group-field">
+                    <div class="field">
+                      <label>What skills are you looking for in a cofounder?*</label>
+                      <div class="radio-group checkbox-group skill-cofounder">
+                        <label for="product-skill">
+                          <input type="checkbox" name="cofounder-skills" id="product-skill" value="Product" required>
+                          Product
+                        </label>
+                        <label for="engineering-skill">
+                          <input type="checkbox" name="cofounder-skills" id="engineering-skill" value="Engineering">
+                          Engineering
+                        </label>
+                        <label for="sales-marketing-skill">
+                          <input type="checkbox" name="cofounder-skills" id="sales-marketing-skill" value="Sales and Marketing">
+                          Sales and Marketing
+                        </label>
+                        <label for="operations-skill">
+                          <input type="checkbox" name="cofounder-skills" id="operations-skill" value="Operations">
+                          Operations
+                        </label>
+                        <label for="other-cofounder-skills" class="is-center">
+                          <input type="checkbox" name="cofounder-skills" id="other-cofounder-skills" value="Other">
+                          Other
+                          <textarea name="other-cofounder-skills" id="other-cofounder-skills-description" disabled></textarea>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="group-field hidden-results">
+                    <div class="field">
+                      <textarea name="cofounder-skills-result" id="cofounder-skill-results"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="group-field">
+                    <div class="field">
+                      <label>What do you prefer?*</label>
+                      <div class="radio-group checkbox-group">
+                        <label for="working-remote-preference">
+                          <input type="radio" name="preferences" id="working-remote-preference" value="Working remote" required>
+                          Working remote
+                        </label>
+                        <label for="working-office-preference">
+                          <input type="radio" name="preferences" id="working-office-preference" value="Working in an office">
+                          Working in an office
+                        </label>
+                        <label for="hybrid-preference">
+                          <input type="radio" name="preferences" id="hybrid-preference" value="Hybrid">
+                          Hybrid
+                        </label>
+                        <label for="open-preference">
+                          <input type="radio" name="preferences" id="open-preference" value="Open to any option ">
+                          Open to any option 
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr>
+
+                  <div class="bottom-form">
+                    <p class="is-small">By signing up below, you agree to have your information shared on the cofounders.nyc website.</p>
+                    <p class="is-small">This process is no string attached - no commitment and no equity required. Simply, get your name out there to start the co-founder matching process. For more information and questions, contact <a href="mailto:info@cofounders.nyc">info@cofounders.nyc</a></p>
+                    <input class="button is-tertiary" type="submit" value="Submit Information">
+                  </div>
+                </form>
+                <div id="success-message">
+                  <div class="icon-holder">
+                  </div>
+                  <h2>Thank you for your request</h2>
+                  <p class="is-small">We will review your request to create your profile, we will contact you soon.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="prefooter">
+        <img src="images/prefooter-image.jpg" alt="">
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-9">
+              <div class="footer-content">
+                <span>Created by</span>
+                <a href="https://www.work-bench.com/" target="_blank">
+                  <img src="images/work-bench.svg" alt="Work-bench" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Scroll Magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <!-- SCRIPTS -->
+    <script src="dist/scripts.js" type="text/javascript"></script>
+  </body>
+</html>
