@@ -348,19 +348,19 @@ hr{
         }
         &.is-first{
           top: 280px;
-          left: 0px;
+          left: 65px;
         }
         &.is-second{
           top: 370px;
-          left: 240px;
+          left: 310px;
         }
         &.is-third{
           top: 170px;
-          right: 295px;
+          right: 235px;
         }
         &.is-fourth{
           top: 260px;
-          right: 130px;
+          right: 65px;
         }
         &:hover{
           span{
@@ -378,8 +378,43 @@ hr{
         max-width: 1300px;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -52%);
+        transform: translate(-45%, -52%);
         z-index: 2;
+      }
+    }
+  }
+  @media (max-width: 1440px){
+    height: auto;
+    min-height: 100vh;
+    .content-hero{
+      min-height: 750px;
+      img{
+        top: 30px;
+      }
+      h1{
+        font-size: 80px;
+      }
+      .buttons{
+        margin-top: 15px;
+      }
+    }
+    .area-image{
+      min-height: 750px;
+      .people-group{
+        .people-profile{
+          &.is-first{
+            top: 170px;
+          }
+          &.is-second{
+            top: 260px;
+          }
+          &.is-third{
+            top: 60px;
+          }
+          &.is-fourth{
+            top: 160px;
+          }
+        }
       }
     }
   }
@@ -414,6 +449,7 @@ hr{
       }
     }
     .area-image{
+      min-height: 950px;
       .overlay-area,
       .clouds-group,
       .lines-group,
@@ -461,6 +497,7 @@ hr{
       .graphics-group{
         img{
           max-width: 1000px;
+          transform: translate(-50%, -52%);
         }
       }
     }
