@@ -717,7 +717,7 @@ footer{
       .hidden-group{
         display: none;
         background-color: #F1F3F5;
-        padding: 5px 20px;
+        padding: 25px 20px 1px;
         margin-top: 15px;
         label{
           margin: 0;
@@ -725,6 +725,9 @@ footer{
         input,
         textarea{
           background-color: #FFFFFF;
+        }
+        .group-field{
+          margin-top: 0;
         }
       }
       &.readonly{

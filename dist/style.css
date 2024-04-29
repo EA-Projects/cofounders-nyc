@@ -9671,7 +9671,7 @@ footer .footer-content a {
 #main-form .form-area form .hidden-group {
   display: none;
   background-color: #F1F3F5;
-  padding: 5px 20px;
+  padding: 25px 20px 1px;
   margin-top: 15px;
 }
 #main-form .form-area form .hidden-group label {
@@ -9680,6 +9680,9 @@ footer .footer-content a {
 #main-form .form-area form .hidden-group input,
 #main-form .form-area form .hidden-group textarea {
   background-color: #FFFFFF;
+}
+#main-form .form-area form .hidden-group .group-field {
+  margin-top: 0;
 }
 #main-form .form-area form.readonly > * {
   pointer-events: none;
