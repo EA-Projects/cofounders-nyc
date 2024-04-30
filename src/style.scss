@@ -544,15 +544,16 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 8px;
-    span{
+    p{
       font-size: 13px;
       font-weight: 200;
       color: $white;
       position: relative;
       top: 1px;
-    }
-    a{
-      line-height: 0; 
+      a{
+        color: $green;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -611,6 +612,9 @@ footer{
     .top-form-area{
       text-align: center;
       margin-bottom: 60px;
+      h1{
+        margin-bottom: 15px;
+      }
       p{
         color: #969494;
       }

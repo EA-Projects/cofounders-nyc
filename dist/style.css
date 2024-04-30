@@ -9470,15 +9470,16 @@ footer .footer-content {
           justify-content: center;
   gap: 8px;
 }
-footer .footer-content span {
+footer .footer-content p {
   font-size: 13px;
   font-weight: 200;
   color: #FFFFFF;
   position: relative;
   top: 1px;
 }
-footer .footer-content a {
-  line-height: 0;
+footer .footer-content p a {
+  color: #2DF9B0;
+  text-decoration: none;
 }
 
 #top-page {
@@ -9540,6 +9541,9 @@ footer .footer-content a {
 #main-form .form-area .top-form-area {
   text-align: center;
   margin-bottom: 60px;
+}
+#main-form .form-area .top-form-area h1 {
+  margin-bottom: 15px;
 }
 #main-form .form-area .top-form-area p {
   color: #969494;
