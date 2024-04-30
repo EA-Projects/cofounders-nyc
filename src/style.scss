@@ -163,6 +163,7 @@ hr{
     img{
       position: absolute;
       top: 20px;
+      left: 5px;
     }
     h1{
       margin-bottom: 20px;
@@ -348,7 +349,7 @@ hr{
         }
         &.is-first{
           top: 280px;
-          left: 65px;
+          left: 50px;
         }
         &.is-second{
           top: 370px;
@@ -356,11 +357,11 @@ hr{
         }
         &.is-third{
           top: 170px;
-          right: 235px;
+          right: 220px;
         }
         &.is-fourth{
           top: 260px;
-          right: 65px;
+          right: 50px;
         }
         &:hover{
           span{
@@ -386,13 +387,17 @@ hr{
   @media (max-width: 1440px){
     height: auto;
     min-height: 100vh;
+    .container{
+      max-width: 90%;
+    }
     .content-hero{
       min-height: 750px;
       img{
         top: 30px;
+        max-width: 170px;
       }
       h1{
-        font-size: 80px;
+        font-size: 75px;
       }
       .buttons{
         margin-top: 15px;
@@ -404,16 +409,25 @@ hr{
         .people-profile{
           &.is-first{
             top: 170px;
+            left: 45px;
           }
           &.is-second{
             top: 260px;
+            left: 290px;
           }
           &.is-third{
             top: 60px;
+            right: 335px;
           }
           &.is-fourth{
             top: 160px;
+            right: 170px;
           }
+        }
+      }
+      .graphics-group{
+        img{
+          transform: translate(-50%, -52%);
         }
       }
     }
@@ -540,16 +554,12 @@ footer{
   background-color: $black;
   padding: 35px 0;
   .footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
     p{
       font-size: 13px;
       font-weight: 200;
+      text-align: center;
       color: $white;
-      position: relative;
-      top: 1px;
+      margin: 0;
       a{
         color: $green;
         text-decoration: none;

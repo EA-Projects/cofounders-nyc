@@ -9043,6 +9043,7 @@ hr {
 #hero .content-hero img {
   position: absolute;
   top: 20px;
+  left: 5px;
 }
 #hero .content-hero h1 {
   margin-bottom: 20px;
@@ -9267,7 +9268,7 @@ hr {
 }
 #hero .area-image .people-group .people-profile.is-first {
   top: 280px;
-  left: 65px;
+  left: 50px;
 }
 #hero .area-image .people-group .people-profile.is-second {
   top: 370px;
@@ -9275,11 +9276,11 @@ hr {
 }
 #hero .area-image .people-group .people-profile.is-third {
   top: 170px;
-  right: 235px;
+  right: 220px;
 }
 #hero .area-image .people-group .people-profile.is-fourth {
   top: 260px;
-  right: 65px;
+  right: 50px;
 }
 #hero .area-image .people-group .people-profile:hover span {
   color: #FFFFFF;
@@ -9301,14 +9302,18 @@ hr {
     height: auto;
     min-height: 100vh;
   }
+  #hero .container {
+    max-width: 90%;
+  }
   #hero .content-hero {
     min-height: 750px;
   }
   #hero .content-hero img {
     top: 30px;
+    max-width: 170px;
   }
   #hero .content-hero h1 {
-    font-size: 80px;
+    font-size: 75px;
   }
   #hero .content-hero .buttons {
     margin-top: 15px;
@@ -9318,15 +9323,23 @@ hr {
   }
   #hero .area-image .people-group .people-profile.is-first {
     top: 170px;
+    left: 45px;
   }
   #hero .area-image .people-group .people-profile.is-second {
     top: 260px;
+    left: 290px;
   }
   #hero .area-image .people-group .people-profile.is-third {
     top: 60px;
+    right: 335px;
   }
   #hero .area-image .people-group .people-profile.is-fourth {
     top: 160px;
+    right: 170px;
+  }
+  #hero .area-image .graphics-group img {
+    -webkit-transform: translate(-50%, -52%);
+            transform: translate(-50%, -52%);
   }
 }
 @media (max-width: 1200px) {
@@ -9458,24 +9471,12 @@ footer {
   background-color: #000000;
   padding: 35px 0;
 }
-footer .footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
-}
 footer .footer-content p {
   font-size: 13px;
   font-weight: 200;
+  text-align: center;
   color: #FFFFFF;
-  position: relative;
-  top: 1px;
+  margin: 0;
 }
 footer .footer-content p a {
   color: #2DF9B0;
