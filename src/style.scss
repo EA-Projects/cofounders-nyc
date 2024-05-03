@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Federo&family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap&family=Inter:wght@100..900&display=swap');
 @import './lib/bootstrap.min.scss';
 
 // VARIABLES
@@ -18,7 +18,7 @@ body{
 
 h1, .h1, h2, .h2, h3, .h3, 
 h4, .h4, h5, .h5, h6, .h6{
-  font-family: "Federo", sans-serif;
+  font-family: "Outfit", sans-serif;
   color: $black;
 }
 
@@ -154,7 +154,7 @@ hr{
   background-color: #eaeef5;
   .content-hero{
     min-height: 950px;
-    max-width: 435px;
+    max-width: 430px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -397,7 +397,8 @@ hr{
         max-width: 170px;
       }
       h1{
-        font-size: 75px;
+        margin-top: 30px;
+        font-size: 85px;
       }
       .buttons{
         margin-top: 15px;
@@ -524,6 +525,7 @@ hr{
         max-width: 150px;
       }
       h1{
+        margin-top: 0;
         max-width: 300px;
       }
       p:not(.is-small){
@@ -847,11 +849,11 @@ footer{
 #success-message{
   display: none;
   margin-top: 40px;
-  padding: 40px;
+  padding: 40px 40px 45px; 
   background-color: #F1F3F5;
   text-align: center;
   .icon-holder{
-    font-family: "Federo", sans-serif;
+    font-family: "Outfit", sans-serif;
     font-size: 24px;
     width: 40px;
     height: 40px;
@@ -867,7 +869,6 @@ footer{
     margin: 0 auto 20px;
   }
   p{
-    max-width: 300px;
     margin: 0 auto;
   }
 }

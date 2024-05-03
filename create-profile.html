@@ -105,7 +105,7 @@
                   <div class="group-field">
                     <div class="field">
                       <label for="school">School*
-                        <input type="text" name="school" id="school" required>
+                        <input type="text" name="school" id="school">
                       </label>
                     </div>
                   </div>
@@ -122,14 +122,6 @@
                     <div class="field">
                       <label for="bio">BIO* <span>(LIMIT TO 500 CHARACTERS)</span>
                         <textarea name="bio" id="bio" maxlength="500" required></textarea>
-                      </label>
-                    </div>
-                  </div>
-                  <!--  -->
-                  <div class="group-field">
-                    <div class="field">
-                      <label for="ideal-partner">Ideal partner*
-                        <input type="text" name="ideal-partner" id="ideal-partner" required>
                       </label>
                     </div>
                   </div>
@@ -168,52 +160,35 @@
                   </div>
                   <div class="group-field">
                     <div class="field">
-                      <label>Are you currently working full-time?*</label>
-                      <div class="radio-group">
-                        <label for="yes-currently-working">
-                          <input type="radio" id="yes-currently-working" name="currently-working" value="Yes" required>
-                          Yes
-                        </label>
-                        <label for="no-currently-working">
-                          <input type="radio" id="no-currently-working" name="currently-working" value="No">
-                          No
-                        </label>
-                      </div>
+                      <label for="current-job-title">Current Job Title*
+                        <input type="text" name="current-job-title" id="current-job-title">
+                      </label>
+                    </div>
+                    <div class="field">
+                      <label for="current-company">Current Company*
+                        <input type="text" name="current-company" id="current-company">
+                      </label>
                     </div>
                   </div>
-                  <div class="hidden-group" id="currently-working">
-                    <div class="group-field">
-                      <div class="field">
-                        <label for="current-job-title">Current Job Title*
-                          <input type="text" name="current-job-title" id="current-job-title">
-                        </label>
-                      </div>
-                      <div class="field">
-                        <label for="current-company">Current Company*
-                          <input type="text" name="current-company" id="current-company">
-                        </label>
-                      </div>
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="relevant-companies">List any past, relevant companies
+                        <input type="text" name="relevant-companies" id="relevant-companies">
+                      </label>
                     </div>
-                    <div class="group-field">
-                      <div class="field">
-                        <label for="relevant-companies">List any past, relevant companies
-                          <input type="text" name="relevant-companies" id="relevant-companies">
+                  </div>
+                  <div class="group-field">
+                    <div class="field">
+                      <label>Do you have any experience founding or working at a previous startup?*</label>
+                      <div class="radio-group">
+                        <label for="yes-experience-working">
+                          <input type="radio" id="yes-experience-working" name="experience-working" value="Yes">
+                          Yes
                         </label>
-                      </div>
-                    </div>
-                    <div class="group-field">
-                      <div class="field">
-                        <label>Do you have any experience founding or working at a previous startup?*</label>
-                        <div class="radio-group">
-                          <label for="yes-experience-working">
-                            <input type="radio" id="yes-experience-working" name="experience-working" value="Yes">
-                            Yes
-                          </label>
-                          <label for="no-experience-working">
-                            <input type="radio" id="no-experience-working" name="experience-working" value="No">
-                            No
-                          </label>
-                        </div>
+                        <label for="no-experience-working">
+                          <input type="radio" id="no-experience-working" name="experience-working" value="No">
+                          No
+                        </label>
                       </div>
                     </div>
                   </div>
@@ -256,9 +231,14 @@
                           Engineering
                         </label>
 
-                        <label for="sales-and-marketing">
-                          <input type="checkbox" name="skills" value="Sales and Marketing" id="sales-and-marketing">
-                          Sales and Marketing
+                        <label for="skill-sales">
+                          <input type="checkbox" name="skills" value="Sales" id="skill-sales">
+                          Sales
+                        </label>
+
+                        <label for="skill-marketing">
+                          <input type="checkbox" name="skills" value="Marketing" id="skill-marketing">
+                          Marketing
                         </label>
 
                         <label for="operations">
@@ -514,9 +494,13 @@
                           <input type="checkbox" name="cofounder-skills" id="engineering-skill" value="Engineering">
                           Engineering
                         </label>
-                        <label for="sales-marketing-skill">
-                          <input type="checkbox" name="cofounder-skills" id="sales-marketing-skill" value="Sales and Marketing">
-                          Sales and Marketing
+                        <label for="sales-skill">
+                          <input type="checkbox" name="cofounder-skills" id="sales-skill" value="Sales">
+                          Sales
+                        </label>
+                        <label for="marketing-skill">
+                          <input type="checkbox" name="cofounder-skills" id="marketing-skill" value="Marketing">
+                          Marketing
                         </label>
                         <label for="operations-skill">
                           <input type="checkbox" name="cofounder-skills" id="operations-skill" value="Operations">
@@ -576,7 +560,7 @@
                     </svg>                    
                   </div>
                   <h2>Thank you for your request</h2>
-                  <p class="is-small">We will review your request to create your profile, we will contact you soon.</p>
+                  <p class="is-small">We will review your request to create your profile</p>
                 </div>
               </div>
             </div>
