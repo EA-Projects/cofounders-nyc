@@ -15,6 +15,10 @@ $(document).ready(function () {
       const form = document.getElementById('register-form');
       form.addEventListener('submit', (e) => {
         $('#register-form').addClass('disabled');
+
+        // Sending status
+        $('#register-form').addClass('readonly');
+        $('#register-form input.button').val("Sending Information");
     
         e.preventDefault();
     
@@ -33,7 +37,6 @@ $(document).ready(function () {
       });
     });
   }
-
 
   // Show textarea inputs, when users select "Other" option
   $('input#other-skill').on('click', function(){
