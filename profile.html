@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.svg" />
 
-    <title>cofounders.nyc | Create a profile to view cofounders</title>
-    <meta name="description" content="cofounders.nyc is the go-to resource to find your NYC-based co-founder.">
+    <title>cofounders.nyc — Create a profile</title>
+    <meta name="description" content="The best way to meet your NYC-based co-founder & early team members.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="" />
-    <meta property="og:title" content="cofounders.nyc | Create a profile to view cofounders" />
+    <meta property="og:title" content="cofounders.nyc — Create a profile" />
     <meta
       property="og:description"
-      content="cofounders.nyc is the go-to resource to find your NYC-based co-founder."
+      content="The best way to meet your NYC-based co-founder & early team members."
     />
     <meta property="og:image" content="/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
@@ -25,11 +25,11 @@
     <meta property="twitter:url" content="" />
     <meta
       property="twitter:title"
-      content="cofounders.nyc | Create a profile to view cofounders"
+      content="cofounders.nyc — Create a profile"
     />
     <meta
       property="twitter:description"
-      content="cofounders.nyc is the go-to resource to find your NYC-based co-founder."
+      content="The best way to meet your NYC-based co-founder & early team members."
     />
     <meta property="twitter:image" content="/og-image.jpg" />
 
@@ -44,12 +44,11 @@
             <div class="row">
               <div class="col-12">
                 <a href="index.html">
-                  <img src="images/cofounders-nyc.svg" alt="cofunders.nyc">
+                  <img src="images/cofoundersnyc-logo.svg" alt="cofunders.nyc">
                 </a>
               </div>
             </div>
           </div>
-          <img class="top-image" src="images/top-page-image.jpg" alt="">
         </div>
       </section>
 
@@ -59,12 +58,12 @@
             <div class="col-12 col-lg-6">
               <div class="form-area">
                 <div class="top-form-area">
-                  <h1>Create a profile to view cofounders</h1>
+                  <h1>Create a profile</h1>
                   <p class="is-small">Fields marked with * are required.</p>
                 </div>
 
                 <form id="register-form" action="">
-                  <h2>About You</h2>
+                  <h3>About You</h3>
                   <div class="group-field">
                     <div class="field">
                       <label for="first-lastname">First and Last Name*
@@ -156,46 +155,63 @@
                   <!--  -->
                   <div class="top-form">
                     <h4>Job History</h4>
-                    <span class="divider"></span>
+                    <span class="divider is-job-history"></span>
                   </div>
                   <div class="group-field">
                     <div class="field">
-                      <label for="current-job-title">Current Job Title*
-                        <input type="text" name="current-job-title" id="current-job-title">
-                      </label>
-                    </div>
-                    <div class="field">
-                      <label for="current-company">Current Company*
-                        <input type="text" name="current-company" id="current-company">
-                      </label>
-                    </div>
-                  </div>
-                  <div class="group-field">
-                    <div class="field">
-                      <label for="relevant-companies">List any past, relevant companies
-                        <input type="text" name="relevant-companies" id="relevant-companies">
-                      </label>
-                    </div>
-                  </div>
-                  <div class="group-field">
-                    <div class="field">
-                      <label>Do you have any experience founding or working at a previous startup?*</label>
+                      <label>Are you currently working full-time?*</label>
                       <div class="radio-group">
-                        <label for="yes-experience-working">
-                          <input type="radio" id="yes-experience-working" name="experience-working" value="Yes">
+                        <label for="yes-currently-working">
+                          <input type="radio" id="yes-currently-working" name="currently-working" value="Yes">
                           Yes
                         </label>
-                        <label for="no-experience-working">
-                          <input type="radio" id="no-experience-working" name="experience-working" value="No">
+                        <label for="no-currently-working">
+                          <input type="radio" id="no-currently-working" name="currently-working" value="No">
                           No
                         </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="hidden-group" id="currently-work-description">
+                    <div class="group-field">
+                      <div class="field">
+                        <label for="current-job-title">Current Job Title*
+                          <input type="text" name="current-job-title" id="current-job-title">
+                        </label>
+                      </div>
+                      <div class="field">
+                        <label for="current-company">Current Company*
+                          <input type="text" name="current-company" id="current-company">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="group-field">
+                      <div class="field">
+                        <label for="relevant-companies">List any past, relevant companies
+                          <input type="text" name="relevant-companies" id="relevant-companies">
+                        </label>
+                      </div>
+                    </div>
+                    <div class="group-field">
+                      <div class="field">
+                        <label>Do you have any experience founding or working at a previous startup?*</label>
+                        <div class="radio-group">
+                          <label for="yes-experience-working">
+                            <input type="radio" id="yes-experience-working" name="experience-working" value="Yes">
+                            Yes
+                          </label>
+                          <label for="no-experience-working">
+                            <input type="radio" id="no-experience-working" name="experience-working" value="No">
+                            No
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <!--  -->
                   <div class="top-form">
                     <h4>Technical</h4>
-                    <span class="divider"></span>
+                    <span class="divider is-technical"></span>
                   </div>
                   <div class="group-field">
                     <div class="field">
@@ -215,7 +231,7 @@
                   <!--  -->
                   <div class="top-form">
                     <h4>Skills</h4>
-                    <span class="divider"></span>
+                    <span class="divider is-skills"></span>
                   </div>
                   <div class="group-field">
                     <div class="field">
@@ -263,7 +279,7 @@
                   <!--  -->
                   <div class="top-form">
                     <h4>Other</h4>
-                    <span class="divider"></span>
+                    <span class="divider is-other"></span>
                   </div>
                   <!--  -->
                   <div class="group-field">
@@ -421,7 +437,7 @@
 
                   <hr>
 
-                  <h2>Co-Founder Matching </h2>
+                  <h3>Co-Founder Matching </h3>
 
                   <div class="group-field m-0">
                     <div class="field">
@@ -548,9 +564,15 @@
                   <hr>
 
                   <div class="bottom-form">
-                    <p class="is-small">By signing up below, you agree to have your information shared on the cofounders.nyc website.</p>
-                    <p class="is-small">This process is no string attached - no commitment and no equity required. Simply, get your name out there to start the co-founder matching process. For more information and questions, contact <a href="mailto:info@cofounders.nyc">info@cofounders.nyc</a></p>
-                    <input class="button is-tertiary" type="submit" value="Submit Information">
+                    <p class="is-small mb-1">By signing up below, you agree to have your information shared on the cofounders.nyc website.</p>
+
+                    <p class="is-small mb-1">
+                      This process is no string attached - no commitment and no equity required. Simply, get your name out there to start the co-founder matching process.
+                    </p>
+
+                    <p class="is-small">For more information and questions, contact <a href="mailto:info@cofounders.nyc">info@cofounders.nyc</a></p>
+
+                    <input class="button" type="submit" value="Submit Information">
                   </div>
                 </form>
                 <div id="success-message">
@@ -569,19 +591,20 @@
       </section>
 
       <section id="prefooter">
-        <img src="images/prefooter-image.jpg" alt="">
+        <img src="images/city-background.jpg" alt="Decorative">
       </section>
 
-      <!-- FOOTER -->
       <footer>
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-9">
               <div class="footer-content">
-                <p>Created by
-                  <a href="https://www.linkedin.com/in/danielchesley/" target="_blank">
-                    Daniel Chesley
+                <p>Follow
+                  <a href="https://twitter.com/danielchesley" target="_blank">
+                    @danielchesley
                   </a>
+                  on X
+                  <img src="images/icon-right.svg" alt="Decorative">
                 </p>
               </div>
             </div>

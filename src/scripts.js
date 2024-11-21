@@ -1,61 +1,17 @@
 
 $(document).ready(function () {
-  if ($('#hero.is-homepage').length) {
-    // Trigger Animations only con Desktop
-    // HERO SECTION 
-    let heroLines = gsap.timeline({paused: false, repeat: -1});
-    heroLines
-    .fromTo("#hero .area-image .lines-group .line",{
-      width: '0',
-      opacity: .5,
-    },{
-      width: 'random(10, 50)',
-      opacity: 1,
-      ease: "power1.inOut",
-      stagger: "random(0, 3)",
-      duration: "random(1, 3)",
-      delay: "random(0, 3)"
-    }).to("#hero .area-image .lines-group .line", {
-      ease: "power1.inOut",
-      width: '0',
-      opacity: 0,
-      stagger: "random(0, 3)",
-      duration: "random(0, 3)",
-    })
-    let heroPeople = gsap.timeline({paused: false, repeat: -1});
-    heroPeople
-    .from("#hero .area-image .people-group .people-profile",{
-      y: 50,
-      opacity: 0,
-      ease: "power1.inOut",
-      duration: .5,
-      delay: "random(0, 0.5)",
-    }).to("#hero .area-image .people-group .people-profile",{
-      delay: 3,
-      y: 50,
-      opacity: 0,
-      ease: "power1.inOut",
-      duration: .3,
-      stagger: {
-        amount: 1,
-        from: "random"
-      }
-    })
-
-    $("#hero .area-image .people-group .people-profile").on("mouseenter", function() {
-      heroPeople.pause();
-    });
-    $("#hero .area-image .people-group .people-profile").on("mouseleave", function() {
-      heroPeople.play();
-    });
-  }
+  // Toggle accordion states
+  $('#detail-event .accordion .card-header').on('click', function(e){
+      e.preventDefault();
+      $(this).parent().toggleClass('is-active');
+  })
   
 
 
   if ($('#register-form').length) {
     $(function () {
       const scriptURL =
-        'https://script.google.com/macros/s/AKfycbxNULZFqGAUH9IxyVx5LCJpdqhR7yjVvJpy-YYfIS7h983WGdQwU-svISEtFj0BobHV/exec';
+        'https://script.google.com/macros/s/AKfycbwKfn_Y0Tg-eG7M3nBmgOQMWW8gRfoYRyUhZK9r0F4rJcBvG3xHOr-sgTHy9VrfJ7sr/exec';
       const form = document.getElementById('register-form');
       form.addEventListener('submit', (e) => {
         $('#register-form').addClass('disabled');
@@ -95,6 +51,15 @@ $(document).ready(function () {
       $('#currently-working').fadeIn();
     } else{
       $('#currently-working').fadeOut();
+    }
+  })
+
+  // Show or hide Currently Work inputs
+  $('input[name="currently-working"]').on('click', function(){
+    if ($(this).val() === 'Yes' ){
+      $('#currently-work-description').fadeIn();
+    } else{
+      $('#currently-work-description').fadeOut();
     }
   })
 
