@@ -8869,6 +8869,15 @@ body.is-white {
   background-color: #FFFFFF;
 }
 
+.my-config {
+  font-family: "Poppins", sans-serif;
+  --border-radius-frame: 0;
+  --clr-background: #FAF6F0;
+  min-height: 42px;
+  --border-radius-element: 0;
+  --clr-confirm: #000000;
+}
+
 h1, .h1, h2, .h2, h3, .h3,
 h4, .h4, h5, .h5, h6, .h6 {
   color: #2E2A23;
@@ -8882,6 +8891,20 @@ h4, .h4, h5, .h5, h6, .h6 {
 ::selection {
   color: #2E2A23;
   background: #EBE0D0;
+}
+
+:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #FAF6F0 inset !important;
+  -webkit-text-fill-color: #2E2A23 !important;
+  font-weight: 500 !important;
+  border-color: #FAF6F0 !important;
+}
+
+.hidden-group :-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+  -webkit-text-fill-color: #2E2A23 !important;
+  font-weight: 500 !important;
+  border-color: #ffffff !important;
 }
 
 h1,

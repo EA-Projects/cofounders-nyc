@@ -62,8 +62,36 @@
                   <p class="is-small">Fields marked with * are required.</p>
                 </div>
 
-                <form id="register-form" action="">
+                <form id="register-form" action="" enctype="multipart/form-data">
                   <h3>About You</h3>
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="file">Headshot*</label>
+                      <lr-config
+                        ctx-name="my-uploader"
+                        pubkey="d69df132f24bce51d26b"
+                        max-local-file-size-bytes="2000000"
+                        multiple="false"
+                        img-only="true"
+                      >
+                      </lr-config>
+
+                      <!-- Uploadcare input -->
+                      <lr-file-uploader-minimal
+                        css-src="https://cdn.jsdelivr.net/npm/@uploadcare/blocks@0.30.5/web/lr-file-uploader-minimal.min.css"
+                        ctx-name="my-uploader"
+                        class="my-config"
+                      >
+                      </lr-file-uploader-minimal>
+                    </div>
+                  </div>
+
+                  <div class="group-field hidden-results">
+                    <div class="field">
+                      <input type="text" name="headshot-url" id="headshot-url">
+                    </div>
+                  </div>
+
                   <div class="group-field">
                     <div class="field">
                       <label for="first-lastname">First and Last Name*
@@ -71,7 +99,7 @@
                       </label>
                     </div>
                   </div>
-                  <!--  -->
+
                   <div class="group-field">
                     <div class="field">
                       <label for="current-city">Current City*
@@ -84,7 +112,7 @@
                       </label>
                     </div>
                   </div>
-                  <!--  -->
+
                   <div class="group-field">
                     <div class="field">
                       <label for="personal-email">Personal Email*
@@ -92,7 +120,7 @@
                       </label>
                     </div>
                   </div>
-                  <!--  -->
+
                   <div class="group-field">
                     <div class="field">
                       <label for="linkedin">Linkedin url*
@@ -100,7 +128,8 @@
                       </label>
                     </div>
                   </div>
-                  <!--  -->
+
+                  <!-- 
                   <div class="group-field">
                     <div class="field">
                       <label for="school">School
@@ -108,7 +137,8 @@
                       </label>
                     </div>
                   </div>
-                  <!--  -->
+                  -->
+
                   <div class="group-field">
                     <div class="field">
                       <label for="personal-website">Personal Website
@@ -116,7 +146,8 @@
                       </label>
                     </div>
                   </div>
-                  <!--  -->
+
+                  <!-- 
                   <div class="group-field">
                     <div class="field">
                       <label for="bio">BIO* <span>(LIMIT TO 500 CHARACTERS)</span>
@@ -124,7 +155,8 @@
                       </label>
                     </div>
                   </div>
-                  <!--  -->
+                  -->
+
                   <div class="group-field">
                     <div class="field">
                       <label for="github-link">GITHUB LINK
@@ -132,7 +164,8 @@
                       </label>
                     </div>
                   </div>
-                  <!--  -->
+
+                  <!-- 
                   <div class="group-field">
                     <div class="field">
                       <label>Your co-founder journey:*</label>
@@ -152,7 +185,8 @@
                         </div>
                     </div>
                   </div>
-                  <!--  -->
+                  -->
+
                   <div class="top-form">
                     <h4>Job History</h4>
                     <span class="divider is-job-history"></span>
@@ -192,6 +226,7 @@
                         </label>
                       </div>
                     </div>
+                    <!-- 
                     <div class="group-field">
                       <div class="field">
                         <label>Do you have any experience founding or working at a previous startup?*</label>
@@ -207,11 +242,19 @@
                         </div>
                       </div>
                     </div>
+                    -->
                   </div>
-                  <!--  -->
+                  
+                  <!-- 
                   <div class="top-form">
                     <h4>Technical</h4>
                     <span class="divider is-technical"></span>
+                  </div>
+                  -->
+
+                  <div class="top-form">
+                    <h4>Skills</h4>
+                    <span class="divider is-skills"></span>
                   </div>
                   <div class="group-field">
                     <div class="field">
@@ -227,11 +270,6 @@
                         </label>
                       </div>
                     </div>
-                  </div>
-                  <!--  -->
-                  <div class="top-form">
-                    <h4>Skills</h4>
-                    <span class="divider is-skills"></span>
                   </div>
                   <div class="group-field">
                     <div class="field">
@@ -270,18 +308,19 @@
                       </div>
                     </div>
                   </div>
-                  <!--  -->
+
                   <div class="group-field hidden-results">
                     <div class="field">
                       <textarea name="skill-results" id="skill-results"></textarea>
                     </div>
                   </div>
-                  <!--  -->
+
+                  <!-- 
                   <div class="top-form">
                     <h4>Other</h4>
                     <span class="divider is-other"></span>
                   </div>
-                  <!--  -->
+
                   <div class="group-field">
                     <div class="field">
                       <label for="specific-skills">List your specific skills / areas of expertise / certificates / program proficiencies / etc.
@@ -289,7 +328,7 @@
                       </label>
                     </div>
                   </div>
-                  <!--  -->
+
                   <div class="group-field">
                     <div class="field">
                       <label for="specific-skills">What sectors are you interested in building in?*</label>
@@ -421,25 +460,184 @@
                       </div>
                     </div>
                   </div>
-                  <!--  -->
+
                   <div class="group-field hidden-results">
                     <div class="field">
                       <textarea name="sector-results" id="sector-results"></textarea>
                     </div>
                   </div>
-                  <!--  -->
+
                   <div class="group-field">
                     <div class="field">
                       <label for="sector-description">Anything you want to elaborate on about the above? Including more on your past job history, experience, areas of interest, passions, etc.</label>
                       <textarea name="sector-description" id="sector-description"></textarea>
                     </div>
                   </div>
+                  -->
 
                   <hr>
 
                   <h3>Co-Founder Matching </h3>
 
                   <div class="group-field m-0">
+                    <div class="field">
+                      <label>Your co-founder journey:*</label>
+                        <div class="radio-group">
+                          <label for="actively-looking">
+                            <input type="radio" id="actively-looking" name="cofounder-journey" value="Actively looking">
+                            Actively looking
+                          </label>
+                          <label for="passively-looking">
+                            <input type="radio" id="passively-looking" name="cofounder-journey" value="Passively looking">
+                            Passively looking
+                          </label>
+                          <label for="just-exploring">
+                            <input type="radio" id="just-exploring" name="cofounder-journey" value="Just exploring">
+                            Just exploring
+                          </label>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="group-field">
+                    <div class="field">
+                      <label for="specific-skills">What sectors are you interested in building in?*</label>
+                      <div class="radio-group checkbox-group sector-group">
+                        <label for="agriculture">
+                          <input type="checkbox" name="sectors" value="Agriculture / Agtech" id="agriculture">
+                          Agriculture / Agtech
+                        </label>
+
+                        <label for="ai-ml">
+                          <input type="checkbox" name="sectors" value="Artificial Intelligence / Machine Learning" id="ai-ml">
+                          Artificial Intelligence / Machine Learning
+                        </label>
+
+                        <label for="b2b">
+                          <input type="checkbox" name="sectors" value="B2B / Enterprise Software" id="b2b">
+                          B2B / Enterprise Software
+                        </label>
+
+                        <label for="biotech">
+                          <input type="checkbox" name="sectors" value="Biotech" id="biotech">
+                          Biotech
+                        </label>
+
+                        <label for="climate-sustainability">
+                          <input type="checkbox" name="sectors" value="Climate / Sustainability" id="climate-sustainability">
+                          Climate / Sustainability
+                        </label>
+
+                        <label for="crypto">
+                          <input type="checkbox" name="sectors" value="Crypto" id="crypto">
+                          Crypto
+                        </label>
+
+                        <label for="consumer">
+                          <input type="checkbox" name="sectors" value="Consumer" id="consumer">
+                          Consumer
+                        </label>
+
+                        <label for="e-commerce">
+                          <input type="checkbox" name="sectors" value="E-commerce" id="e-commerce">
+                          E-commerce
+                        </label>
+
+                        <label for="data">
+                          <input type="checkbox" name="sectors" value="Data" id="data">
+                          Data
+                        </label>
+
+                        <label for="developer-tools">
+                          <input type="checkbox" name="sectors" value="Developer Tools" id="developer-tools">
+                          Developer Tools
+                        </label>
+
+                        <label for="edtech">
+                          <input type="checkbox" name="sectors" value="EdTech" id="edtech">
+                          EdTech
+                        </label>
+
+                        <label for="energy">
+                          <input type="checkbox" name="sectors" value="Energy" id="energy">
+                          Energy
+                        </label>
+
+                        <label for="fintech">
+                          <input type="checkbox" name="sectors" value="Fintech" id="fintech">
+                          Fintech
+                        </label>
+
+                        <label for="food">
+                          <input type="checkbox" name="sectors" value="Food" id="food">
+                          Food
+                        </label>
+
+                        <label for="gaming">
+                          <input type="checkbox" name="sectors" value="Gaming" id="gaming">
+                          Gaming
+                        </label>
+
+                        <label for="government">
+                          <input type="checkbox" name="sectors" value="Government" id="government">
+                          Government
+                        </label>
+
+                        <label for="hardware">
+                          <input type="checkbox" name="sectors" value="Hardware" id="hardware">
+                          Hardware
+                        </label>
+
+                        <label for="healthcare">
+                          <input type="checkbox" name="sectors" value="Healthcare" id="healthcare">
+                          Healthcare
+                        </label>
+
+                        <label for="infrastructure-software">
+                          <input type="checkbox" name="sectors" value="Infrastructure Software" id="infrastructure-software">
+                          Infrastructure Software
+                        </label>
+
+                        <label for="marketplaces">
+                          <input type="checkbox" name="sectors" value="Marketplaces" id="marketplaces">
+                          Marketplaces
+                        </label>
+
+                        <label for="open-source">
+                          <input type="checkbox" name="sectors" value="Open Source" id="open-source">
+                          Open Source
+                        </label>
+
+                        <label for="proptech">
+                          <input type="checkbox" name="sectors" value="Proptech" id="proptech">
+                          Proptech
+                        </label>
+
+                        <label for="robotics">
+                          <input type="checkbox" name="sectors" value="Robotics" id="robotics">
+                          Robotics
+                        </label>
+
+                        <label for="security">
+                          <input type="checkbox" name="sectors" value="Security" id="security">
+                          Security
+                        </label>
+
+                        <label for="other-sector">
+                          <input type="checkbox" name="sectors" value="Other" id="other-sector">
+                          Other
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="group-field hidden-results">
+                    <div class="field">
+                      <textarea name="sector-results" id="sector-results"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="group-field mb-0">
                     <div class="field">
                       <label>Do you already have a startup or idea that you're set on?*</label>
                       <div class="radio-group">
@@ -475,7 +673,7 @@
                     </div>
                   </div>
 
-                  <div class="group-field mt-0 mb-5">
+                  <div class="group-field mt-0">
                     <div class="field">
                       <div class="radio-group">
                         <label for="yes-but-not-ready">
@@ -493,6 +691,30 @@
                         <label for="no-ideas">
                           <input type="radio" name="startup-idea" id="no-ideas" value="No, I could help a co-founder with their existing idea or explore new ideas together">
                           No, I could help a co-founder with their existing idea or explore new ideas together
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="group-field">
+                    <div class="field">
+                      <label>What do you prefer?*</label>
+                      <div class="radio-group checkbox-group">
+                        <label for="working-remote-preference">
+                          <input type="radio" name="preferences" id="working-remote-preference" value="Working remote">
+                          Working remote
+                        </label>
+                        <label for="working-office-preference">
+                          <input type="radio" name="preferences" id="working-office-preference" value="Working in an office">
+                          Working in an office
+                        </label>
+                        <label for="hybrid-preference">
+                          <input type="radio" name="preferences" id="hybrid-preference" value="Hybrid">
+                          Hybrid
+                        </label>
+                        <label for="open-preference">
+                          <input type="radio" name="preferences" id="open-preference" value="Open to any option ">
+                          Open to any option 
                         </label>
                       </div>
                     </div>
@@ -539,25 +761,8 @@
 
                   <div class="group-field">
                     <div class="field">
-                      <label>What do you prefer?*</label>
-                      <div class="radio-group checkbox-group">
-                        <label for="working-remote-preference">
-                          <input type="radio" name="preferences" id="working-remote-preference" value="Working remote">
-                          Working remote
-                        </label>
-                        <label for="working-office-preference">
-                          <input type="radio" name="preferences" id="working-office-preference" value="Working in an office">
-                          Working in an office
-                        </label>
-                        <label for="hybrid-preference">
-                          <input type="radio" name="preferences" id="hybrid-preference" value="Hybrid">
-                          Hybrid
-                        </label>
-                        <label for="open-preference">
-                          <input type="radio" name="preferences" id="open-preference" value="Open to any option ">
-                          Open to any option 
-                        </label>
-                      </div>
+                      <label for="sector-description">Anything else you want to elaborate on? Including more on your past job history, experience, areas of expertise, certificates, program proficiencies, passions, etc.</label>
+                      <textarea name="sector-description" id="sector-description"></textarea>
                     </div>
                   </div>
 
@@ -624,6 +829,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <!-- Uploadcare -->
+    <script type="module">
+      import * as LR from "https://cdn.jsdelivr.net/npm/@uploadcare/blocks@0.30.5/web/lr-file-uploader-regular.min.js";
+    
+      LR.registerBlocks(LR);
+    </script>
     <!-- SCRIPTS -->
     <script src="dist/scripts.js" type="text/javascript"></script>
   </body>

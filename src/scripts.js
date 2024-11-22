@@ -5,24 +5,26 @@ $(document).ready(function () {
       e.preventDefault();
       $(this).parent().toggleClass('is-active');
   })
-  
-
 
   if ($('#register-form').length) {
     $(function () {
       const scriptURL =
-        'https://script.google.com/macros/s/AKfycbwKfn_Y0Tg-eG7M3nBmgOQMWW8gRfoYRyUhZK9r0F4rJcBvG3xHOr-sgTHy9VrfJ7sr/exec';
+        'https://script.google.com/macros/s/AKfycbyC6RUr0dnxDHUJBlBjwHvEjdfjSBDlULdDgZwQ8aEVVPlrclx21lj7adgVMHQUeS1H/exec';
       const form = document.getElementById('register-form');
+  
       form.addEventListener('submit', (e) => {
         $('#register-form').addClass('disabled');
-
+  
         // Sending status
         $('#register-form').addClass('readonly');
         $('#register-form input.button').val("Sending Information");
-    
+  
         e.preventDefault();
-    
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+  
+        // Crear FormData para incluir archivo y otros campos
+        const formData = new FormData(form);
+  
+        fetch(scriptURL, { method: 'POST', body: formData })
           .then((response) => {
             $('#success-message').fadeIn();
             $('#register-form').addClass('readonly');
@@ -37,6 +39,7 @@ $(document).ready(function () {
       });
     });
   }
+  
 
   // Show textarea inputs, when users select "Other" option
   $('input#other-skill').on('click', function(){
@@ -94,4 +97,9 @@ $(document).ready(function () {
     });
   });
   // END WINDOW READY
+});
+
+window.addEventListener('LR_UPLOAD_FINISH', (e) => {
+  // console.log(e.detail);
+  document.getElementById("headshot-url").value = e.detail.data[0].cdnUrl;
 });
