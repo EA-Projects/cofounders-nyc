@@ -50,28 +50,9 @@ $(document).ready(function () {
     $('#other-cofounder-skills-description').removeAttr('disabled').fadeIn();
   });
 
-
-    // Show or hide Currently working inputs
-  $('input[name="currently-working"]').on('click', function(){
-    if ($(this).val() === 'Yes' ){
-      $('#currently-working').fadeIn();
-    } else{
-      $('#currently-working').fadeOut();
-    }
-  })
-
-  // Show or hide Currently Work inputs
-  $('input[name="currently-working"]').on('click', function(){
-    if ($(this).val() === 'Yes' ){
-      $('#currently-work-description').fadeIn();
-    } else{
-      $('#currently-work-description').fadeOut();
-    }
-  })
-
   // Show or hide Startup idea inputs
   $('input[name="startup-idea"]').on('click', function(){
-    if ($(this).val() === 'Yes, I already have an idea I’m set on and am looking for a co-founder who can help me build it' ){
+    if ($(this).val() === 'Yes, I already have an idea I’m set on and am looking for a co-founder' ){
       $('#startup-idea-description').fadeIn();
     } else{
       $('#startup-idea-description').fadeOut();
