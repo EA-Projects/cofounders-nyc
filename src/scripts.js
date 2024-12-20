@@ -79,8 +79,3 @@ $(document).ready(function () {
   });
   // END WINDOW READY
 });
-
-window.addEventListener('LR_UPLOAD_FINISH', (e) => {
-  // console.log(e.detail);
-  document.getElementById("headshot-url").value = e.detail.data[0].cdnUrl;
-});
