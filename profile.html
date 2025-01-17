@@ -164,22 +164,29 @@
                   <div class="group-field">
                     <div class="field">
                       <label>I’m looking for: *</label>
-                      <div class="radio-group">
+                      <div class="radio-group looking-for-group checkbox-group">
                         <label for="a-technical-cofounder">
-                          <input type="radio" id="a-technical-cofounder" name="i-am-looking-for" value="A technical cofounder" required>
+                          <input type="checkbox" id="a-technical-cofounder" name="i-am-looking-for" value="A technical cofounder" required>
                           A technical cofounder
                         </label>
                         <label for="a-sales-driven-cofounder">
-                          <input type="radio" id="a-sales-driven-cofounder" name="i-am-looking-for" value="A sales driven cofounder">
+                          <input type="checkbox" id="a-sales-driven-cofounder" name="i-am-looking-for" value="A sales driven cofounder">
                           A sales driven cofounder
                         </label>
-                        <label for="both">
-                          <input type="radio" id="both" name="i-am-looking-for" value="Both">
-                          Both
+                        <label for="an-early-team-members">
+                          <input type="checkbox" id="an-early-team-members" name="i-am-looking-for" value="An early team members">
+                          An early team members
                         </label>
                       </div>
                     </div>
                   </div>
+
+                  <div class="group-field hidden-results">
+                    <div class="field">
+                      <textarea name="looking-for-results" id="looking-for-results"></textarea>
+                    </div>
+                  </div>
+
                   <div class="group-field">
                     <div class="field">
                       <label>Your Skills (select all that apply)*</label>
@@ -568,6 +575,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
     <!-- SCRIPTS -->
-    <script src="dist/scripts.js" type="text/javascript"></script>
+    <script src="dist/scripts.js?ver=0.1" type="text/javascript"></script>
   </body>
 </html>

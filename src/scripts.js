@@ -61,6 +61,11 @@ $(document).ready(function () {
 
   jQuery($ => {
     // Add checkbox value to text field 
+    // LOOKING FOR RESULTS
+    let $checkLookingFor = $(".looking-for-group :checkbox").on("change", function() {
+      let string = $checkLookingFor.filter(":checked").map((i, el) => el.value).get().join(", ");
+      $("#looking-for-results").val(string && "" + string);
+    });
     // SKILL RESULTS
     let $checkSkills = $(".skill-group :checkbox").on("change", function() {
       let string = $checkSkills.filter(":checked").map((i, el) => el.value).get().join(", ");
