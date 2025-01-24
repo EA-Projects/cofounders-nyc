@@ -79,11 +79,6 @@
                         <input type="text" name="current-city" id="current-city" required>
                       </label>
                     </div>
-                    <div class="field">
-                      <label for="state">State*
-                        <input type="text" name="state" id="state" required>
-                      </label>
-                    </div>
                   </div>
 
                   <div class="group-field">
@@ -166,16 +161,20 @@
                       <label>I’m looking for: *</label>
                       <div class="radio-group looking-for-group checkbox-group">
                         <label for="a-technical-cofounder">
-                          <input type="checkbox" id="a-technical-cofounder" name="i-am-looking-for" value="A technical cofounder" required>
+                          <input type="checkbox" id="a-technical-cofounder" name="i-am-looking-for" value="A technical cofounder">
                           A technical cofounder
                         </label>
                         <label for="a-sales-driven-cofounder">
                           <input type="checkbox" id="a-sales-driven-cofounder" name="i-am-looking-for" value="A sales driven cofounder">
                           A sales driven cofounder
                         </label>
-                        <label for="an-early-team-members">
-                          <input type="checkbox" id="an-early-team-members" name="i-am-looking-for" value="An early team members">
-                          An early team members
+                        <label for="hire-early-team-members">
+                          <input type="checkbox" id="hire-early-team-members" name="i-am-looking-for" value="Hire early team members">
+                          Hire early team members
+                        </label>
+                        <label for="join-a-company">
+                          <input type="checkbox" id="join-a-company" name="i-am-looking-for" value="Join a company">
+                          Join a company
                         </label>
                       </div>
                     </div>
@@ -247,10 +246,6 @@
                             <input type="radio" id="passively-looking" name="cofounder-journey" value="Passively looking">
                             Passively looking
                           </label>
-                          <label for="just-exploring">
-                            <input type="radio" id="just-exploring" name="cofounder-journey" value="Just exploring">
-                            Just exploring
-                          </label>
                         </div>
                     </div>
                   </div>
@@ -265,8 +260,8 @@
                         </label>
 
                         <label for="ai-ml">
-                          <input type="checkbox" name="sectors" value="Artificial Intelligence / Machine Learning" id="ai-ml">
-                          Artificial Intelligence / Machine Learning
+                          <input type="checkbox" name="sectors" value="AI/ML" id="ai-ml">
+                          AI/ML
                         </label>
 
                         <label for="b2b">
@@ -457,10 +452,6 @@
                           <input type="radio" name="preferences" id="hybrid-preference" value="Hybrid">
                           Hybrid
                         </label>
-                        <label for="open-preference">
-                          <input type="radio" name="preferences" id="open-preference" value="Open to any option ">
-                          Open to any option 
-                        </label>
                       </div>
                     </div>
                   </div>
@@ -488,11 +479,6 @@
                         <label for="operations-skill">
                           <input type="checkbox" name="cofounder-skills" id="operations-skill" value="Operations">
                           Operations
-                        </label>
-                        <label for="other-cofounder-skills" class="is-center">
-                          <input type="checkbox" name="cofounder-skills" id="other-cofounder-skills" value="Other">
-                          Other
-                          <textarea name="other-cofounder-skills" id="other-cofounder-skills-description" disabled></textarea>
                         </label>
                       </div>
                     </div>
